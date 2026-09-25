@@ -24,7 +24,7 @@ Subsequent stages progressively correct the inherited prediction according to th
 
 ### SCEF Decoder
 
-SCEF coordinates heterogeneous deeper encoder representations before cross-scale interaction and constructs the initial prediction state. It performs scale-wise context harmonization followed by hierarchical cross-scale synthesis to produce the initial logit \(P_5\).
+SCEF coordinates heterogeneous deeper encoder representations before cross-scale interaction and constructs the initial prediction state. It performs scale-wise context harmonization followed by hierarchical cross-scale synthesis to produce the initial logit $P_5$.
 
 ### PECR — Progressive Error-Correction Refinement
 
@@ -38,11 +38,11 @@ EBI introduces high-resolution shallow structural cues only at the final PECR st
 
 EvoCorrNet maintains a continuous prediction trajectory:
 
-\[
+$$
 P_5 \rightarrow P_4 \rightarrow P_3 \rightarrow P_2
-\]
+$$
 
-\(P_5\) is the initial prediction constructed by SCEF, while \(P_4\), \(P_3\), and \(P_2\) are progressively corrected prediction states produced by PECR.
+$P_5$ is the initial prediction constructed by SCEF, while $P_4$, $P_3$, and $P_2$ are progressively corrected prediction states produced by PECR.
 
 ## Main Results
 
@@ -71,7 +71,7 @@ The training set contains 1,450 images from Kvasir-SEG and CVC-ClinicDB. CVC-300
 - Input size: 352 × 352
 - Optimizer: Adam
 - Batch size: 16
-- Initial learning rate: \(5 \times 10^{-5}\)
+- Initial learning rate: $5 \times 10^{-5}$
 - Training epochs: 200
 - Learning-rate decay: ×0.1 every 50 epochs
 - Multi-scale training: 256 × 256, 352 × 352, and 448 × 448
