@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Python build/cache
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Training artifacts
+logs/
+runs/
+wandb/
+results/
+outputs/
+predictions/
+
+# Datasets
+data/
+dataset/
+datasets/
+
+# Model weights / exported models
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Temporary files
+*.tmp
+*.temp
+*.log
