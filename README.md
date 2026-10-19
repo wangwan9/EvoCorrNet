@@ -54,19 +54,28 @@ The following results are equal-weight averages over the five public polyp segme
 
 ## Datasets
 
-| Dataset | Training | Testing | Original source |
-|---|---:|---:|---|
-| Kvasir-SEG | 900 | 100 | [Simula](https://datasets.simula.no/kvasir-seg/) |
-| CVC-ClinicDB | 550 | 62 | [Grand Challenge](https://polyp.grand-challenge.org/CVCClinicDB/) |
-| CVC-300 | — | 60 | [EndoScene](http://adas.cvc.uab.es/endoscene/) |
-| CVC-ColonDB | — | 380 | [CVC](http://mv.cvc.uab.es/projects/colon-qa/cvccolondb) |
-| ETIS-LaribPolypDB | — | 196 | [Grand Challenge](https://polyp.grand-challenge.org/ETISLarib/) |
+| Dataset | Training | Testing |
+|---|---:|---:|
+| Kvasir-SEG | 900 | 100 |
+| CVC-ClinicDB | 550 | 62 |
+| CVC-300 | — | 60 |
+| CVC-ColonDB | — | 380 |
+| ETIS-LaribPolypDB | — | 196 |
 
 The training set contains 1,450 images from Kvasir-SEG and CVC-ClinicDB. CVC-300, CVC-ColonDB, and ETIS-LaribPolypDB are used exclusively for testing.
 
 ## Data Availability Statement
 
-The five datasets used in this study are publicly available from their respective providers, as cited in the reference list. Links to the original dataset sources are provided in the repository README. The complete source code and implementation instructions for EvoCorrNet will be made publicly available at [https://github.com/wangwan9/EvoCorrNet](https://github.com/wangwan9/EvoCorrNet) upon acceptance of the manuscript.
+EvoCorrNet was evaluated on five publicly available polyp segmentation datasets: Kvasir-SEG, CVC-ClinicDB, CVC-300, CVC-ColonDB, and ETIS-LaribPolypDB.
+
+Please obtain the datasets from their original providers:
+
+- **Kvasir-SEG:** [https://datasets.simula.no/kvasir-seg/](https://datasets.simula.no/kvasir-seg/)
+- **CVC-ClinicDB:** [https://polyp.grand-challenge.org/CVCClinicDB/](https://polyp.grand-challenge.org/CVCClinicDB/)
+- **CVC-300 and CVC-ColonDB:** [https://pages.cvc.uab.es/CVC-Colon/index.php/databases/](https://pages.cvc.uab.es/CVC-Colon/index.php/databases/)
+- **ETIS-LaribPolypDB:** [https://polyp.grand-challenge.org/EtisLarib/](https://polyp.grand-challenge.org/EtisLarib/)
+
+The original dataset images and masks are not redistributed in this repository. Users should follow the applicable terms of use and cite the corresponding dataset publications. Dataset preparation and implementation instructions will be provided with the complete code release.
 
 ## Experimental Protocol
 
