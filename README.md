@@ -54,15 +54,19 @@ The following results are equal-weight averages over the five public polyp segme
 
 ## Datasets
 
-| Dataset | Training | Testing |
-|---|---:|---:|
-| Kvasir-SEG | 900 | 100 |
-| CVC-ClinicDB | 550 | 62 |
-| CVC-300 | — | 60 |
-| CVC-ColonDB | — | 380 |
-| ETIS-LaribPolypDB | — | 196 |
+| Dataset | Training | Testing | Original source |
+|---|---:|---:|---|
+| Kvasir-SEG | 900 | 100 | [Simula](https://datasets.simula.no/kvasir-seg/) |
+| CVC-ClinicDB | 550 | 62 | [Grand Challenge](https://polyp.grand-challenge.org/CVCClinicDB/) |
+| CVC-300 | — | 60 | [EndoScene](http://adas.cvc.uab.es/endoscene/) |
+| CVC-ColonDB | — | 380 | [CVC](http://mv.cvc.uab.es/projects/colon-qa/cvccolondb) |
+| ETIS-LaribPolypDB | — | 196 | [Grand Challenge](https://polyp.grand-challenge.org/ETISLarib/) |
 
 The training set contains 1,450 images from Kvasir-SEG and CVC-ClinicDB. CVC-300, CVC-ColonDB, and ETIS-LaribPolypDB are used exclusively for testing.
+
+## Data Availability Statement
+
+The five datasets used in this study are publicly available from their respective providers, as cited in the reference list. Links to the original dataset sources are provided in the repository README. The complete source code and implementation instructions for EvoCorrNet will be made publicly available at [https://github.com/wangwan9/EvoCorrNet](https://github.com/wangwan9/EvoCorrNet) upon acceptance of the manuscript.
 
 ## Experimental Protocol
 
