@@ -74,7 +74,24 @@ Please obtain the datasets from their original providers:
 - **CVC-ClinicDB:** [https://polyp.grand-challenge.org/CVCClinicDB/](https://polyp.grand-challenge.org/CVCClinicDB/)
 - **CVC-300 and CVC-ColonDB:** [https://pages.cvc.uab.es/CVC-Colon/index.php/databases/](https://pages.cvc.uab.es/CVC-Colon/index.php/databases/)
 - **ETIS-LaribPolypDB:** [https://polyp.grand-challenge.org/EtisLarib/](https://polyp.grand-challenge.org/EtisLarib/)
+### External Generalization Dataset: PolypGen
 
+PolypGen is used exclusively for **zero-shot cross-dataset evaluation** and is not included in the five-benchmark training or testing protocol above.
+
+| PolypGen subset | Evaluated samples | Empty ground-truth masks |
+|---|---:|---:|
+| Still images | 1,537 | 125 |
+| Video frames | 2,225 | 515 |
+
+No PolypGen samples were used for training, fine-tuning, hyperparameter tuning, model selection, or test-time adaptation.
+
+**Official download links:**
+
+- [PolypGen Dataset — Synapse](https://www.synapse.org/#!Synapse:syn26376615/wiki/613312)
+- [PolypGen Video Sequences — Google Drive](https://drive.google.com/drive/folders/16uL9n84SrMt7IiQFzTUQNaJ9TbHJ8DhW?usp=sharing)
+- [PolypGen Official GitHub Repository](https://github.com/DebeshJha/PolypGen)
+
+The original dataset images and annotations are not redistributed in this repository.
 The original dataset images and masks are not redistributed in this repository. Users should follow the applicable terms of use and cite the corresponding dataset publications. Dataset preparation and implementation instructions will be provided with the complete code release.
 
 ## Experimental Protocol
